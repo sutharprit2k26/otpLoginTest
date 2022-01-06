@@ -4,7 +4,7 @@ def genrateSendOTP(email_id):
 
     server = smtplib.SMTP('mail.smtp2go.com',2525)
     server.starttls()
-    server.login('mr.robot@fsociety.com','Fsociety@123')
+    server.login('mr.robot@fsociety.com','#########')
     genrateSendOTP.otp = ''.join([str(random.randint(0,9)) for i in range(4)])
     msg='Hello, Your OTP is '+genrateSendOTP.otp
     print(msg)
